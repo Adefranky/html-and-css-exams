@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .left-content {
+            width: calc(50% - 20px);
+           
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            margin-right: 20px;
+        }
+        .right-content {
+            width: calc(50% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
+        }
+        h1 {
+            color: #1877f2;
+            text-align: center;
+        }
+        p {
+            color: #333;
+            line-height: 1.5;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        input[type="submit"],
+        button{
+            background-color: #1877f2;
+        }
+        create-account {
+            background-color:green;
+            color: #fff;
+            width: 50px;
+        }
+        .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .links a {
+            text-decoration: none;
+            color: #1877f2;
+            margin: 0 10px;
+        }
+        .create-account {
+            background-color: green;
+            width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-content">
+        <h1>FACEBOOK</h1>
+        <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="right-content">
+        <h1>Login</h1>
+        <form action="#">
+          <input type="text" placeholder="Email address or phone number">
+          <input type="password" placeholder="Password">
+          <input type="submit" value="LOGIN">
+      </form>
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <button class="create-account">Create new account</button>
+        </div>
+    </div>
+</body>
+</html>
